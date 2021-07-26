@@ -1,1 +1,1 @@
-# https://olgad21.github.io/rsschool-cv/cv
+# https://olgad21.github.io/rsschool-cv/
