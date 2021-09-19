@@ -9,7 +9,12 @@ body {
   margin: 0 auto;
 }
 
-header,
+header {
+  display: flex;
+  padding: 20px;
+  background-color: #e9692c;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -24,7 +29,7 @@ main {
 }
 
 section {
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 h1 {
@@ -42,4 +47,28 @@ ul {
 
 ul li::marker {
   color: #e9692c;
+}
+
+
+.header__button-burger {
+  display: block;
+  margin: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.header__list {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.main__about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
