@@ -3,49 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   <link rel="stylesheet" href="styles/styles.css">
   <title>Olga Dashuk CV</title>
 </head>
 <body>
   <header>
+    
+    <div class="wrapper">
+      <div class="header__container">
+        <div class="header__burger">
+            <span></span>
+        </div>
 
-    <div class="header__burger">
-      <a href="#" class="header__button-burger">
-        <span></span>
-      </a>
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li>
+              <a href="#about" class="header__link">About Me</a>
+            </li>
+            <li>
+              <a href="#education" class="header__link">Education</a>
+            </li>
+            <li>
+              <a href="#skills" class="header__link">Skills</a>
+            </li>
+            <li>
+              <a href="#languages" class="header__link">Languages</a>
+            </li>
+            <li>
+              <a href="#code" class="header__link">Code Example</a>
+            </li>
+            <li>
+              <a href="#video" class="header__link">My Video</a>
+            </li>
+            <li>
+              <a href="#contacts" class="header__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <script src="js/jquery-3.6.0.slim.min.js"></script>
-    <script src="js/script.js"></script>
-
-    <nav class="header__menu">
-      <ul class="header__list">
-        <li>
-          <a href="" class="header__link">About Me</a>
-        </li>
-        <li>
-          <a href="" class="header__link">Education</a>
-        </li>
-        <li>
-          <a href="" class="header__link">Skills</a>
-        </li>
-        <li>
-          <a href="" class="header__link">Languages</a>
-        </li>
-        <li>
-          <a href="" class="header__link">Code Example</a>
-        </li>
-        <li>
-          <a href="" class="header__link">My Video Presentation</a>
-        </li>
-        <li>
-          <a href="" class="header__link">Contacts</a>
-        </li>
-      </ul>
-    </nav>
+    
   </header>
   <main>  
-    <section class="main__about-me">
+    <section class="main__about-me" id="about">
       <figure>
         <img src="images/avatar.png" alt="Olga's avatar">
       </figure>
@@ -53,13 +58,13 @@
       <h2>Junior Front-End Developer</h2>
     </section>
     <hr />
-    <section>
+    <section class="wrapper">
       <h2>About me</h2>
-      <p>After working closely with multiple IT projects as a marketer, I revealed the need to create something new myself, learn up-to-date technologies and be able to use them in practice.
-        My previous role of the Head of marketing also gave me exceptional skills of communicating with the team of product managers, developers, designers and dealing with conflicts effectively. I consider it one of my top soft skills.
-        And I also believe my ability to learn on the run under pressure and a strong will to make a positive impact on a product development will notably contribute to my future work.</p>
+      <p>After working closely with multiple IT projects as a marketer, I want to find a way to create something new myself, learn up-to-date technologies, and be able to use them in practice. </p>
+      <p id="education"> My previous role of the head of marketing gave me exceptional skills of communicating with the team of product managers, developers, designers and dealing with conflicts effectively.
+      I consider it one of my top soft skills.</p><p>And I also believe my ability to learn on the run under pressure and a strong will to make a positive impact on a product development will notably contribute to my future work.</p>
     </section>
-    <section>
+    <section class="wrapper">
       <h2>Education</h2>
       <ul>
         <li>
@@ -67,38 +72,55 @@
         </li>
         <p>Bachelor's degree</p>
         <p>International Economic Relations</p>
-        <p>Activities and Societies: Business English Conferences</p>
+        <p id="skills">Activities and Societies: Business English Conferences</p>
         <li>
           <strong>Rolling Scopes School</strong>
         </li>
         <p>JavaScript/Front-end</p>
       </ul>
     </section>
-    <section>
+    <section class="wrapper">
       <h2>Skills</h2>
       <ul>
         <li>HTML, CSS</li>
         <li>Markdown</li>
-        <li>Figma</li>
+        <li id="languages">Figma</li>
         <li>Javascript Basics</li>
         <li>Git, GitHub</li>
         <li>SEO</li>
       </ul>
     </section>
-    <section>
+    <section class="wrapper" id="code">
       <h2>Languages</h2>
       <ul>
         <li>English C1 </li>
         <li>Spanish A2</li>
       </ul>
     </section>
-    <section>
+    <section class="wrapper">
       <h2>Code Example</h2>
+      <pre>
+        <code>
+            &lt;h2>JavaScript in Body&lt;/h2>
+
+            &lt;p id="demo">A Paragraph.&lt;/p>
+
+            &lt;button type="button" onclick="myFunction()">Try it&lt;/button>
+
+            &lt;script>
+            function myFunction() {
+              document.getElementById("demo")
+              innerHTML = "Paragraph changed.";
+            }
+            &lt;/script>
+        </code>
+      </pre>
     </section>
-    <section>
+    <section class="wrapper" id="video">
       <h2>My Video Presentation</h2>
+        <iframe style="display: block; margin: auto;" width="840" height="400" src="https://www.youtube.com/embed/N7pZgQepXfA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
-    <section>
+    <section class="wrapper" id="contacts">
       <h2>Contacts</h2>
       <ul>
         <li>

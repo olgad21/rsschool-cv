@@ -1,18 +1,39 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
   font-family: Roboto, Helvetica, sans-serif;
+  font-size: 22px;
 }
 
 body {
-  width: 60%;
   margin: 0 auto;
 }
 
 header {
+  width: 100%;
+  background-color: coral;
+  position: fixed;
+  height: 130px;
+  z-index: 50;
+}
+
+
+.wrapper {
+  max-width: 1400px;
+  margin: 40px auto;
+}
+
+.header__container {
   display: flex;
   padding: 20px;
-  background-color: #e9692c;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 footer {
@@ -28,8 +49,8 @@ main {
   line-height: 1.5;
 }
 
-section {
-  margin: 20px 0;
+p {
+  padding-bottom: 10px;
 }
 
 h1 {
@@ -49,26 +70,96 @@ ul li::marker {
   color: #e9692c;
 }
 
+a {
+  text-decoration: none;
+  color: #e9692c;
+  transition: 0.3s;
+}
 
-.header__button-burger {
+a:hover {
+  color: grey;
+}
+
+.header__burger {
+  display: none;
+}
+
+
+.header__menu {
   display: block;
-  margin: 20px;
-  width: 50px;
-  height: 50px;
-  background-color: black;
-  border-radius: 50%;
 }
 
 .header__list {
   display: flex;
   padding: 20px;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
 }
 
+.header__list li{
+  list-style: none;
+}
+
+.header__link {
+  margin-right: 60px;
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+  transition: color 0.3s;
+}
+
+.header__link:hover,
+.header__link:focus {
+  color: grey;
+}
+
 .main__about-me {
+  margin-top: 130px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+  
+
+  .header__burger {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  z-index: 100;
+  }
+
+  .header__burger span {
+    position: absolute;
+    top: 22px;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    background-color: white;
+  }
+
+  .header__burger:before,
+  .header__burger:after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 4px;
+    left: 0;
+  }
+
+  .header__burger:before {
+    top: 0;
+  }
+
+  .header__burger:after {
+    bottom: 0;
+  }
+
 }
