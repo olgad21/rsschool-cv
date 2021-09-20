@@ -14,9 +14,9 @@ body {
   margin: 0 auto;
 }
 
-body._lock {
+/* body._lock {
   overflow: hidden;
-}
+} */
 
 header {
   width: 100%;
@@ -196,7 +196,8 @@ a:hover {
     background-color: rgba(255, 177, 80, 0.9);
     padding: 120px 30px 30px 30px;
     transition: left 0.3s ease 0s;
-    overflow: auto;
+    /* overflow: auto; */
+    
   }
 
   .header__menu._active {
